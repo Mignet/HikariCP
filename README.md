@@ -1,6 +1,5 @@
 <h1><img src="https://github.com/brettwooldridge/HikariCP/wiki/Hikari.png"> HikariCP<sup><sup>&nbsp;It's Faster.</sup></sup><sub><sub><sup>Hi·ka·ri [hi·ka·'lē] &#40;<i>Origin: Japanese</i>): light; ray.</sup></sub></sub></h1><br>
 
-[![][Build Status img]][Build Status]
 [![][Coverage Status img]][Coverage Status]
 [![][license img]][license]
 [![][Maven Central img]][Maven Central]
@@ -13,7 +12,7 @@
 
 ----------------------------------------------------
 
-_Java 8 thru 11 maven artifact:_
+_Java 8 ~ 11 maven artifact:_
 ```xml
     <dependency>
         <groupId>com.zaxxer</groupId>
@@ -43,9 +42,8 @@ _Java 6 maven artifact (*maintenance mode*):_
 
 ##### JMH 基准测试 :checkered_flag:
 
-JMH是一种用于构建，运行和分析Java和其他语言编写的针对JVM的nano/micro/milli/macro基准测试框架。
-[JMH微基准框架](http://openjdk.java.net/projects/code-tools/jmh/)被用来在非常小的尺度上测量池的开销。
-你可以拉取[HikariCP基准测试项目](https://github.com/brettwooldridge/HikariCP-benchmark)，审查并运行这些基准测试来了解更多细节.
+[JMH微基准框架](http://openjdk.java.net/projects/code-tools/jmh/)是一种用于构建，运行和分析Java或其他语言编写的基于Java虚拟机之上的nano/micro/milli/macro基准测试框架。我们用它来在非常小的尺度上测量池的开销。
+您可以拉取[HikariCP基准测试项目](https://github.com/brettwooldridge/HikariCP-benchmark)，审查并运行这些基准测试来了解更多细节.
 
 ![](https://github.com/brettwooldridge/HikariCP/wiki/HikariCP-bench-2.6.0.png)
 
@@ -65,7 +63,7 @@ JMH是一种用于构建，运行和分析Java和其他语言编写的针对JVM�
 
 #### 峰值需求下池的比较
 <a href="https://github.com/brettwooldridge/HikariCP/blob/dev/documents/Welcome-To-The-Jungle.md"><img width="400" align="right" src="https://github.com/brettwooldridge/HikariCP/wiki/Spike-Hikari.png"></a>
-与其他池相比，HikariCP v2.6与独特的“峰值需求”负载相关的分析.
+与其他池相比，HikariCP v2.6与特定的“峰值需求”负载相关的分析.
 
 客户的环境带来了获取新的连接的高成本，并且需要动态大小的池，但是还同时需要响应峰值的请求。 了解我们对峰值需求处理的[方式](https://github.com/brettwooldridge/HikariCP/blob/dev/documents/Welcome-To-The-Jungle.md).
 <br/>
@@ -80,7 +78,8 @@ JMH是一种用于构建，运行和分析Java和其他语言编写的针对JVM�
 <br/>
 <br/>
 <br/>
-#### Failure: Pools behaving badly
+
+#### 故障: 池的糟糕行为
 阅读我们有趣的[“数据库挂掉”池挑战](https://github.com/brettwooldridge/HikariCP/wiki/Bad-Behavior:-Handling-Database-Down).
 
 ----------------------------------------------------
@@ -108,7 +107,7 @@ HikariCP明智的参数默认值，在大多数部署中都无需额外调整就
 ##### 必要
 
 &#128288;``dataSourceClassName``<br/>
-这是JDBC驱动程序提供的``DataSource``类的名称。查阅用于获取此类名的特定JDBC驱动程序的文档，或参见下面的[table](https://github.com/brettwooldridge/HikariCP#popular-datasource-class-names)。
+这是JDBC驱动程序提供的``DataSource``类的名称。查阅用于获取此类名的特定JDBC驱动程序的文档，或参见下面的[table](https://github.com/Mignet/HikariCP#流行的DataSource类名)。
 注意不支持XA数据源。 XA需要一个真正的事务管理器
 [bitronix](https://github.com/bitronix/btm)。请注意，如果您使用此属性，则不需要此属性
 ``jdbcUrl``，用于“old-school”基于DriverManager的JDBC驱动程序配置。
