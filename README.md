@@ -5,7 +5,7 @@
 [![][Maven Central img]][Maven Central]
 [![][Javadocs img]][Javadocs]
 
-快速，简单，可靠。HikariCP是一个“零开销”的生产就绪的JDBC连接池。 大约130Kb，库非常小。了解[我们怎么做到的](https://github.com/brettwooldridge/HikariCP/wiki/Down-the-Rabbit-Hole).
+快速，简单，可靠。HikariCP是一个“零开销”的生产就绪的JDBC连接池。 大约130Kb，库非常小。了解[我们怎么做到的-下兔子洞](https://github.com/brettwooldridge/HikariCP/wiki/Down-the-Rabbit-Hole).
 
 &nbsp;&nbsp;&nbsp;<sup>**"简单是可靠性的先决条件."**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- *Edsger Dijkstra*</sup>
